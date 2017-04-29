@@ -1,27 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 </head>
 	<body>
-    <script>    
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var myObj = this.responseText;
-            var jsonPretty = JSON.stringify(JSON.parse(myObj),null,2);
-            document.getElementById("demo").innerHTML = jsonPretty;
-        }
-    };
-    xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
-    xmlhttp.send();
-    </script>
+    <div class="jumbotron text-center">
+      <h1>Bitcoin</h1>
+    </div>
+<div class="container">
 <div class="row">
-	<div class="col-lg-12 col-xs-6">
-    	<pre>
-        	<code id="demo" class="json kljs"></code>
-    	</pre>
-	</div>
+  <div class="col-sm-4">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Info</h3>
+            </div>
+            <div class="panel-body">
+              <pre>
+                  <code id="info" class="json kljs"></code>
+              </pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">blockchaininfo</h3>
+                  </div>
+                  <div class="panel-body">
+                    <pre>
+                        <code id="blockchaininfo" class="json kljs"></code>
+                    </pre>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4">
+                      <div class="panel panel-info">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">mininginfo</h3>
+                        </div>
+                        <div class="panel-body">
+                          <pre>
+                              <code id="mininginfo" class="json kljs"></code>
+                          </pre>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                            <div class="panel panel-info">
+                              <div class="panel-heading">
+                                <h3 class="panel-title">peerinfo</h3>
+                              </div>
+                              <div class="panel-body">
+                                <pre>
+                                    <code id="peerinfo" class="json kljs"></code>
+                                </pre>
+                              </div>
+                            </div>
+                          </div>
 </div>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../custom.js"></script>
+<script src="C:\Users\ben\Documents\GitHub\daobenyaya.github.io\JS\javascript.js"></script>
+<script type="text/javascript">HomePageLoading1();</script>
+<script type="text/javascript">HomePageLoading2();</script>
+<script type="text/javascript">HomePageLoading3();</script>
+<script type="text/javascript">HomePageLoading4();</script>
+
+
 	</body>
 </html>
